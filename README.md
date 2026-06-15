@@ -1,58 +1,493 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+🧺 LaundryGlow – Sistem Manajemen Laundry Berbasis Web
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+   
 
-## About Laravel
+📖 Deskripsi Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+LaundryGlow merupakan aplikasi manajemen laundry berbasis web yang dibuat untuk membantu proses pengelolaan usaha laundry secara digital. Sistem ini memungkinkan admin untuk mengelola data pelanggan, paket laundry, transaksi, serta memantau status pengerjaan dan pembayaran laundry secara lebih mudah, cepat, dan terorganisir.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aplikasi ini dibangun menggunakan:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel 12 sebagai framework backend
 
-## Learning Laravel
+PHP 8.2 sebagai bahasa pemrograman
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+MySQL sebagai database
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Blade Template sebagai template engine
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Bootstrap/CSS Custom untuk tampilan antarmuka (UI)
 
-## Agentic Development
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Sistem memiliki desain modern dengan tema Dark Mode Neon Gradient sehingga memberikan pengalaman pengguna yang menarik dan nyaman.
 
-```bash
-composer require laravel/boost --dev
 
-php artisan boost:install
-```
+---
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+🎯 Tujuan Pembuatan Project
 
-## Contributing
+Adapun tujuan dari pembuatan aplikasi ini adalah:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Mempermudah pengelolaan data pelanggan laundry.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2. Mempermudah pencatatan transaksi laundry.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. Mengurangi kesalahan pencatatan secara manual.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. Memantau status pengerjaan laundry secara real-time.
+
+
+5. Mengetahui total pendapatan dari transaksi yang dilakukan.
+
+
+6. Menyimpan riwayat transaksi secara terstruktur.
+
+
+
+
+---
+
+✨ Fitur Utama
+
+1. Dashboard
+
+Dashboard berfungsi sebagai halaman utama yang menampilkan ringkasan informasi sistem, antara lain:
+
+Total pendapatan laundry
+
+Jumlah cucian yang sedang diproses
+
+Jumlah pelanggan
+
+Riwayat transaksi terbaru
+
+
+Fungsi Dashboard
+
+Memberikan informasi secara cepat kepada admin.
+
+Memudahkan monitoring aktivitas laundry.
+
+Menampilkan statistik bisnis secara ringkas.
+
+
+
+---
+
+2. Manajemen Pelanggan
+
+Fitur ini digunakan untuk mengelola data pelanggan laundry.
+
+Data yang disimpan:
+
+Nama pelanggan
+
+Nomor telepon
+
+Alamat pelanggan
+
+
+Fitur:
+
+✅ Tambah pelanggan
+
+✅ Edit data pelanggan
+
+✅ Hapus pelanggan
+
+✅ Menampilkan daftar pelanggan
+
+Tujuan:
+
+Mempermudah admin dalam menyimpan dan mengelola informasi pelanggan secara terpusat.
+
+
+---
+
+3. Manajemen Paket Laundry
+
+Fitur ini digunakan untuk mengelola jenis layanan laundry.
+
+Data yang disimpan:
+
+Nama paket
+
+Jenis paket
+
+Harga per satuan
+
+
+Jenis Paket:
+
+Kiloan (/Kg)
+
+Satuan (/Pcs)
+
+
+Fitur:
+
+✅ Tambah paket
+
+✅ Edit paket
+
+✅ Hapus paket
+
+✅ Menampilkan daftar paket
+
+Contoh:
+
+Nama Paket	Jenis	Harga
+
+Paket Cuci Kering	Kiloan	Rp7.000/Kg
+Paket Setrika	Satuan	Rp5.000/Pcs
+
+
+
+---
+
+4. Transaksi Laundry
+
+Fitur transaksi digunakan untuk mencatat seluruh layanan laundry yang dilakukan pelanggan.
+
+Data transaksi:
+
+Kode Invoice
+
+Nama pelanggan
+
+Paket laundry
+
+Jumlah (Qty)
+
+Total pembayaran
+
+Tanggal masuk
+
+Status proses
+
+Status pembayaran
+
+
+Fitur:
+
+✅ Menambah transaksi baru
+
+✅ Menampilkan riwayat transaksi
+
+✅ Melihat detail transaksi
+
+✅ Menghapus transaksi
+
+
+---
+
+📄 Detail Transaksi
+
+Pada halaman detail transaksi, sistem menampilkan:
+
+Informasi Invoice
+
+Nomor Invoice
+
+Tanggal Masuk
+
+Tanggal Ambil
+
+Nama Kasir
+
+
+Informasi Pelanggan
+
+Nama pelanggan
+
+Nomor telepon
+
+Alamat
+
+
+Informasi Layanan
+
+Nama paket
+
+Jumlah laundry
+
+Tarif
+
+Total pembayaran
+
+
+Catatan Khusus
+
+Contoh:
+
+> "Baju putih jangan dicampur."
+
+
+
+
+---
+
+🔄 Manajemen Status Laundry
+
+Admin dapat mengubah status proses pengerjaan laundry.
+
+Status Proses
+
+1. Antri (Menunggu)
+
+
+2. Dicuci
+
+
+3. Dikeringkan
+
+
+4. Disetrika
+
+
+5. Selesai
+
+
+6. Sudah Diambil
+
+
+
+Status Pembayaran
+
+Belum Lunas
+
+Lunas
+
+
+Fungsi:
+
+Memudahkan admin dan pelanggan dalam mengetahui perkembangan proses laundry.
+
+
+---
+
+📊 Alur Sistem
+
+Admin Login
+      │
+      ▼
+Tambah Data Pelanggan
+      │
+      ▼
+Tambah Paket Laundry
+      │
+      ▼
+Buat Transaksi Baru
+      │
+      ▼
+Generate Invoice
+      │
+      ▼
+Update Status Laundry
+      │
+      ▼
+Transaksi Selesai
+
+
+---
+
+🗂 Struktur Menu Aplikasi
+
+Dashboard
+│
+├── Pelanggan
+│     ├── Tambah Pelanggan
+│     ├── Edit Pelanggan
+│     └── Hapus Pelanggan
+│
+├── Paket Laundry
+│     ├── Tambah Paket
+│     ├── Edit Paket
+│     └── Hapus Paket
+│
+└── Transaksi Laundry
+      ├── Tambah Transaksi
+      ├── Riwayat Transaksi
+      ├── Detail Invoice
+      ├── Update Status
+      └── Hapus Transaksi
+
+
+---
+
+🛠 ERD Sederhana
+
+Tabel Pelanggan
+
+Field	Type
+
+id	bigint
+nama	varchar
+telepon	varchar
+alamat	text
+created_at	timestamp
+updated_at	timestamp
+
+
+
+---
+
+Tabel Paket
+
+Field	Type
+
+id	bigint
+nama_paket	varchar
+jenis_paket	enum
+harga	integer
+created_at	timestamp
+updated_at	timestamp
+
+
+
+---
+
+Tabel Transaksi
+
+Field	Type
+
+id	bigint
+invoice	varchar
+pelanggan_id	bigint
+paket_id	bigint
+qty	integer
+total_bayar	integer
+status_proses	varchar
+status_bayar	varchar
+catatan	text
+tanggal_masuk	datetime
+tanggal_ambil	datetime
+created_at	timestamp
+updated_at	timestamp
+
+
+
+---
+
+🔗 Relasi Database
+
+Pelanggan (1) -------- (N) Transaksi
+
+Paket Laundry (1) -------- (N) Transaksi
+
+Artinya:
+
+Satu pelanggan dapat memiliki banyak transaksi.
+
+Satu paket laundry dapat digunakan pada banyak transaksi.
+
+
+
+---
+
+💻 Teknologi yang Digunakan
+
+Teknologi	Kegunaan
+
+Laravel 12	Framework Backend
+PHP 8.2	Bahasa Pemrograman
+MySQL	Database
+Blade	Template Engine
+Bootstrap	User Interface
+CSS Custom	Tampilan Modern
+JavaScript	Interaksi Halaman
+
+
+
+---
+
+🚀 Cara Menjalankan Project
+
+1. Clone Repository
+
+git clone https://github.com/username/laundryglow.git
+
+2. Masuk ke Folder Project
+
+cd laundryglow
+
+3. Install Dependency
+
+composer install
+
+4. Copy File Environment
+
+cp .env.example .env
+
+5. Generate Key
+
+php artisan key:generate
+
+6. Atur Database pada File .env
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laundryglow
+DB_USERNAME=root
+DB_PASSWORD=
+
+7. Jalankan Migration
+
+php artisan migrate
+
+8. Menjalankan Server
+
+php artisan serve
+
+Buka browser:
+
+http://127.0.0.1:8000
+
+
+---
+
+📸 Tampilan Sistem
+
+Dashboard
+
+Menampilkan ringkasan pendapatan, jumlah pelanggan, dan transaksi terbaru.
+
+Manajemen Pelanggan
+
+Mengelola data pelanggan secara lengkap.
+
+Paket Laundry
+
+Mengelola jenis paket dan tarif laundry.
+
+Transaksi Laundry
+
+Mencatat seluruh transaksi dan riwayat laundry.
+
+Detail Invoice
+
+Menampilkan informasi detail transaksi serta status pengerjaan laundry.
+
+
+---
+
+👨‍💻 Pengembang
+
+Nama: Claresta Aristawati
+
+Project: LaundryGlow – Sistem Manajemen Laundry Berbasis Web
+
+Framework: Laravel 12
+
+Tahun Pembuatan: 2026
+
+
+---
+
+📌 Kesimpulan
+
+LaundryGlow adalah sistem informasi laundry berbasis web yang dirancang untuk membantu proses administrasi usaha laundry secara digital. Sistem ini menyediakan fitur pengelolaan pelanggan, paket layanan, transaksi, invoice, serta monitoring status pengerjaan dan pembayaran sehingga proses bisnis laundry menjadi lebih efektif, efisien, dan terstruktur.
